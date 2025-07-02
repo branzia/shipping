@@ -23,22 +23,6 @@ class ShippingServiceProvider extends BranziaServiceProvider implements Provides
     {
         parent::register();
     }
-    public static function filamentDiscoveryPaths(): array
-    {
-        return [
-            'resources' => [
-                ['path' => __DIR__.'/Filament/Resources', 'namespace' => 'Branzia\\Shipping\\Filament\\Resources'],
-            ],
-            'pages' => [
-                ['path' => __DIR__.'/Filament/Pages', 'namespace' => 'Branzia\\Shipping\\Filament\\Pages'],
-            ],
-            'clusters' => [
-                ['path' => __DIR__.'/Filament/Clusters', 'namespace' => 'Branzia\\Shipping\\Filament\\Clusters'],
-            ],
-            'widgets' => [
-                ['path' => __DIR__.'/Filament/Widgets', 'namespace' => 'Branzia\\Shipping\\Filament\\Widgets'],
-            ],
-        ];
-    }
+
 }
 
